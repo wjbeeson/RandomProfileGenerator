@@ -1,7 +1,7 @@
 from profile import Profile
 
 def print_profile(profile: Profile):
-    print(f"Name: {profile.full_name} | City: {profile.city} | Job: {profile.job} | IsFemale: {profile.is_female}")
+    print(f"Name: {profile.full_name} | Age: {profile.age} | City: {profile.city} | Job: {profile.job} | IsFemale: {profile.is_female}")
 
 
 print("Random Everything: ")

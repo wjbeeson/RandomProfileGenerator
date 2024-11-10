@@ -4,7 +4,7 @@ import profile_generator_functions as gf
 
 class Profile:
 
-    def __init__(self, is_female: bool = None):
+    def __init__(self, is_female: bool = None, age_use_normal_dist:bool = True):
         #  Randomly generate name
         if is_female is None:
             is_female = random.choice([True, False])
@@ -19,3 +19,5 @@ class Profile:
 
         #  Randomly assign job
         self.job = gf.generate_random_job()
+
+        self.age = gf.generate_random_age(age_use_normal_dist)
