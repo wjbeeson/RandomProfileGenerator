@@ -27,14 +27,16 @@ def generate_random_job():
     return fake_generator.job()
 
 def generate_random_age(use_normal_dist = False):
+    min_age = 18
+    max_age = 75
+
     if not use_normal_dist:
-        return random.randint(18, 75)
+        return random.randint(min_age, max_age)
 
     # Parameters for the normal distribution
     mean_age = 30  # Peak at 30
     std_dev_age = 10  # Standard deviation of 10
-    min_age = 15
-    max_age = 75
+
 
     # Function to generate a random age within the specified range
     def generate_random_age_normal_dist():
